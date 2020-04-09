@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import './assets/styles/reset.css';
 import './assets/fonts/iconfont.css';
 import App from './App';
-
-
-ReactDOM.render(<App />,document.getElementById('root'));
+import 'antd-mobile/dist/antd-mobile.css';
+import './utils/axiosUtil';
+ReactDOM.render(<App/>,document.getElementById('root'));
