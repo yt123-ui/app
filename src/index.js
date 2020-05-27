@@ -5,4 +5,6 @@ import './assets/fonts/iconfont.css';
 import App from './App';
 import 'antd-mobile/dist/antd-mobile.css';
 import './utils/axiosUtil';
-ReactDOM.render(<App/>,document.getElementById('root'));
+import {Provider} from 'react-redux';
+import store from './store';
+ReactDOM.render(<Provider store={store}><App/></Provider>,document.getElementById('root'));

@@ -22,4 +22,6 @@
 .icon-user:before {
   content: "\e673";
 }
-
+.icon-shezhi:before {
+  content: "\e611";
+}

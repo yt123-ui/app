@@ -17,7 +17,18 @@ const Forgot = Loadable({
     loader: () => import(/*webpackChunkName:'Forgot'*/'./pages/Forgot'),
     loading: Loading
 })
-
+const Map = Loadable({
+    loader: () => import(/*webpackChunkName:'Map'*/'./pages/Map'),
+    loading: Loading
+})
+const City = Loadable({
+    loader: () => import(/*webpackChunkName:'City'*/'./pages/City'),
+    loading: Loading
+})
+// const ShopCar = Loadable({
+//     loader: () =>import('./pages/ShopCar'),
+//     loading:Loading
+// })
 export default class App extends React.Component {
     render() {
         return <HashRouter>
@@ -26,6 +37,8 @@ export default class App extends React.Component {
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />
                 <Route path="/forgot" component={Forgot} />
+                <Route path="/map" component={Map} />
+                <Route path="/city" component={City} />
             </Switch>
         </HashRouter>
     }

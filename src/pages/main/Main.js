@@ -4,6 +4,7 @@ import Home from './Home';
 import Wechat from './Wechat';
 import History from './History';
 import My from './My';
+
 export default class Main extends Component {
     constructor(props) {
         super(props);
@@ -22,7 +23,7 @@ export default class Main extends Component {
             case 0:
                 return <Home />
             case 1:
-                return <Wechat />
+                return <Wechat/>
             case 2:
                 return <History />
             case 3:
